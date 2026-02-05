@@ -7,6 +7,7 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
         String cmd, wiseSaying, author;
+        int id = 0;
 
         System.out.println("== 명언 앱 ==");
 
@@ -21,8 +22,9 @@ public class Main {
 
                 System.out.print("작가 : ");
                 author = input.nextLine();
+                id++;
 
-                System.out.println("1번 명언이 등록되었습니다.");
+                System.out.printf("%d번 명언이 등록되었습니다.\n", id);
             } else if (cmd.equals("종료")) {
                 break;
             }
