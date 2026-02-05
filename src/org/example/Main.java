@@ -5,10 +5,25 @@ import java.util.Scanner;
 public class Main {
     static void main() {
         Scanner input = new Scanner(System.in);
+        String cmd, wiseSaying, author;
 
         System.out.println("== 명언 앱 ==");
-        System.out.print("명령) ");
 
-        String cmd = input.nextLine();
+        while (true) {
+            System.out.print("명령) ");
+
+            cmd = input.nextLine();
+
+            if (cmd.equals("등록")) {
+                System.out.print("명언 : ");
+                wiseSaying = input.nextLine();
+
+                System.out.print("작가 : ");
+                author = input.nextLine();
+            } else if (cmd.equals("종료")) {
+                break;
+            }
+
+        }
     }
 }
