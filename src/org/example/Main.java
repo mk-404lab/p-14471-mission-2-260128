@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     static void main() {
+
         Scanner input = new Scanner(System.in);
         String cmd, wiseSaying, author;
 
@@ -20,6 +21,8 @@ public class Main {
 
                 System.out.print("작가 : ");
                 author = input.nextLine();
+
+                System.out.println("1번 명언이 등록되었습니다.");
             } else if (cmd.equals("종료")) {
                 break;
             }
